@@ -1,0 +1,24 @@
+body {
+    background-image: url('./assets/pattern.jpeg');
+    font-family: 'Lugrasimo', cursive, Arial, sans-serif;
+    color: #333;
+  }
+
+  .container {
+    width: 50%;
+    margin: 100px auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 50px;
+    border-radius: 15px;
+    border: 5px solid #ccc;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+  
+

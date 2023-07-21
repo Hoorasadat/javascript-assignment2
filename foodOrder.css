@@ -1,0 +1,105 @@
+body {
+    background-image: url('./assets/pattern.jpeg');
+    font-family: 'Lugrasimo', cursive Arial, sans-serif;
+    color: #333;
+}
+
+.container, .regcontainer {
+    width: 50%;
+    margin: 100px auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    border: 5px solid #ccc;
+    display: flex;
+    flex-direction: column;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.regcontainer label {
+    margin-bottom: 10px;
+}
+
+.regcontainer input {
+    margin-bottom: 20px;
+}
+
+.container input {
+    width: 60px;
+}
+
+/* .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header input {
+    width: 100%;
+} */
+
+.foodOrderGroup {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    grid-template-rows: 30px 1px;
+}
+
+.addToCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+
+}
+
+.container input {
+    margin: 0px 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.button {
+    width: 200px;
+    padding: 15px;
+    margin: 50px auto;
+    font-weight: 2rem;
+    font-size: 20px;
+    background-color: rgb(102, 164, 189);
+    border-radius: 10px;
+    color: bisque;
+    align-items: center;
+}
+
+/* button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+} */
