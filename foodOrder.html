@@ -8,11 +8,24 @@
     <title>Western Columbia Grocers</title>
 </head>
 
-<body>
+<body onload="initFunction()">
 
-  <div class="regcontainer">
-    <h1>User Information</h1>
-    <form id="myform" onsubmit="processData(); return false;">
+  <header>
+    <div class="logo">
+      <img src="./assets/logo.png" alt="logo">
+    </div>
+    <div class="title">
+      <h1>Western Columbia Grocers</h1>
+    </div>
+  </header>
+
+  <form id="myform" onsubmit="processData(); return false;">
+
+
+
+    <!-- -------------------------------------Registeration form------------------------------------- -->
+    <div class="regcontainer">
+      <h1>Customer Information</h1>
 
       <label for="fullname"> Full Name: </label>
       <input
@@ -59,23 +72,19 @@
       <label for="pickupdate"> Pickup Date: </label>
       <input type="date" id="pickupdate" required>
 
-      <div class="buttons">
+      <!-- <div class="buttons">
         <input class="button" type="reset" value="Reset">
         <input class="button" type="submit" value="Submit">
-      </div>
+      </div> -->
 
-    </form>
 
-  </div>
-
+    </div>
 
 
 
-
-    <div class="container">
+  <!-- -------------------------------------Order form------------------------------------- -->
+    <div class="orderContainer">
       <h1>Western Columbia Grocers Food Order</h1>
-
-      <form>
 
         <!-- <div class="header">
           <label for="name">Name:</label>
@@ -87,25 +96,25 @@
           <div class="addToCard">
             <label for="vegetableHampers">Add</label>
             <input type="number" id="vegetableHampers" min="0" value="0">
-            <label for="vegetableHampers">item(s) to cart - $20.00 per box</label>
+            <label for="vegetableHampers">item(s) to cart - $30.00 per box</label>
           </div>
         </div>
 
         <div class="foodOrderGroup">
           <label for="fruitHampers">Fruit Hampers (10kg each)</label>
           <div class="addToCard">
-              <label for="vegetableHampers">Add</label>
+              <label for="fruitHampers">Add</label>
               <input type="number" id="fruitHampers" min="0" value="0">
-              <label for="vegetableHampers">item(s) to cart - $30.00 per box</label>
+              <label for="fruitHampers">item(s) to cart - $20.00 per box</label>
           </div>
         </div>
 
         <div class="foodOrderGroup">
           <label for="freshChickens">Fresh Chickens</label>
           <div class="addToCard">
-              <label for="vegetableHampers">Add</label>
+              <label for="freshChickens">Add</label>
               <input type="number" id="freshChickens" min="0" value="0">
-              <label for="vegetableHampers">item(s) to cart - $7.00 per Chicken</label>
+              <label for="freshChickens">item(s) to cart - $7.00 per Chicken piece</label>
           </div>
         </div>
 
@@ -119,21 +128,22 @@
         </div>
 
         <button class="button" type="submit" id="submitOrder" disabled>Place Order</button>
-      </form>
     </div>
 
+  </form>
 
 
+  <!-- -------------------------------------Registeration form------------------------------------- -->
+  <div id="summaryContainer">
 
-    <div class="container">
-        <h1>Order Summary</h1>
-        <div id="orderSummary"></div>
-        <div id="total"></div>
-    </div>
+    <div id="info"></div>
+    <div id="orderSummary"></div>
+    <div id="total"></div>
+
+  </div>
 
 
+  <script src="foodOrder.js"></script>
 
-
-    <script src="foodOrder.js"></script>
 </body>
 </html>
